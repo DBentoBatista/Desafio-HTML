@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio HTML</title>
+</head>
+    
+<body>
+    <h1 id="topo">Introdução ao <abbr title="HyperText Markup Language - Linguagem de Marcação de Hipertexto">HTML</abbr> na prática<sup>1</sup></h1>
+    <img src="https://media.istockphoto.com/id/1391198660/pt/foto/hands-printing-on-laptop-banner.jpg?s=1024x1024&w=is&k=20&c=pm9pq55b8b7aEeg0pAdKg1JMKwf_jgjv1Jc4EKJto2c=" width="450" height="150">
+    <hr>
+    <strong><h2>ÍNDICE</h2>
+    <ul>
+        <li><a href="#estrutura">Estrutura básica do HTML</a> </li>
+        <li><a href="#falando">Falando sobre Tags</a></li>
+        <li><a href="#atributos">Atributos das Tags</a></li>
+        <li><a href="#textos">Textos</a></li>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#obs">Observações diversas</a></li>
+        <li><a href="#saibamais">Saiba mais</a></li>
+        <li><a href="#notas">Notas</a></li></strong>
+    </ul>
+    
+    <h2 id="estrutura">Estrutura básica do HTML</h2>
+        <p>O HTML consiste em basicamente em duas partes: head e body. </p>
+        <p>Head é o cabeçalho, coisas que serão carregadas antes de exibir para o usuário,  e body o corpo do texto, o que de fato vai aparecer para o usuário.</p>
+        <p> No head tem uma tag chamada title, que é o título da página.</p>
+        <a title="Clique e volte ao início da página" href="#topo"><small>Voltar</small></a>
+
+    <h2 id="falando">Falando sobre Tags</h2>
+        <p><strong><i>i</i></strong>: altera a apresentação da fonte para itálico;</p>
+        <p><strong><i>strong</i></strong>: altera a apresentação da fonte para negrito;</p>
+        <p><strong><i>u</i></strong>: (underline) serve para sublinhar;</p>
+        <p><strong><i>mark</i></strong>: utilizada para marcar um texto;</p>
+        <p><strong><i>sup</i></strong>: usada para deixar o texto sobrescrito;</p>
+        <p><strong><i>sub</i></strong>: define o texto subscrito. O texto subscrito aparece meio caractere abaixo da linha normal e às vezes é renderizado em uma fonte menor. O texto subscrito pode ser usado para fórmulas químicas, como H <sub>2</sub> O;</p>
+        <p><strong><i>small</i></strong>: define textos menores (como direitos autorais e outros comentários secundários);</p>
+        <p><strong><i>hr</i></strong>: define uma quebra temática em uma página HTML, inserindo uma linha abaixo do texto (por exemplo, uma mudança de tópico);</p>
+        <p><strong><i>del</i></strong>: define o texto que foi excluído de um documento. Os navegadores geralmente traçam uma linha no texto excluído;</p>
+        <p><strong><i>abbr</i></strong>: define uma abreviatura ou um acrônimo, como "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM". Dica<sup>1</sup>: Use o atributo global para mostrar a descrição da abreviatura/acrônimo ao passar o mouse sobre o elemento title. "The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.";</p>
+        <p><strong><i>input</i></strong>: especifica um campo de entrada onde o usuário pode inserir dados. Essa tag, diferentemente das outras, não tem fechamento, tipo um /input>;</p>
+        <blockquote><p>Ex: <input type="text" title="Digite um texto" style="background-color: aquamarine;"></p></blockquote>
+        <p><strong><i>img</i></strong>: é usada para incorporar uma imagem em uma página HTML;</p>
+        <a title="Clique e volte ao início da página" href="#topo"><small>Voltar</small></a>
+
+    <h2 id="atributos">Atributos das Tags</h2>
+        <p>São propriedades que uma tag pode ter. Existem os mais globais, os quais todas as tags vão ter, e outros específicos de determinadas tags.</p>
+        <p>Atributos mais genéricos:</p>
+            <p> <mark>id</mark>: identifica determinado elemento</p>
+            <p><mark>style</mark>: serve para inserir comando CSS diretamente no elemento</p>
+                <p>Ex: style="color: blue;"</p>
+            <p><mark>class</mark>: também voltado para o CSS, serve para padronizar tudo que estiver inserido no elemento.</p>
+        <p>Atributos mais específicos:</p>
+        <p><mark>type</mark>: específico do input. Pode receber "text", "number", "color", entre vários outros valores possíveis.</p>
+        <p><mark>src</mark>: específico da tag img. Ex: img src: "endereço da imagem".
+        <a title="Clique e volte ao início da página" href="#topo"><small>Voltar</small></a>
+        
+    <h2 id="textos">Textos</h2>
+        <p><strong><i>h1 a h6</i></strong>: o h vem de header (cabeçalho) e é voltado para títulos e subtítulos.</p>
+        <p><strong><i>p</i></strong>: para o texto em si, usa-se o "p" que vem de (paragraph - parágrafo).</p>
+        <p><strong><i>blockquote</i></strong>: (bloco de citação) usado para citações, por exemplo, pois o navegador interpreta isso e aumenta o recuo.</p>
+        <a title="Clique e volte ao início da página" href="#topo"><small>Voltar</small></a>
+
+    <h2 id="listas">Listas</h2>
+        <p>Existem basicamente dois tipos de listas:</p>
+        <p><strong><i>ol</i></strong>: (ordered list - lista ordenada) representa uma lista de itens ordenados. Os itens são indicados por números.</p>
+        <p><strong><i>ul</i></strong>: (unordered list - lista sem ordem) representa uma lista de itens sem ordem rígida. Os itens são indicados por marcadores.</p>
+        <p><strong><i>li</i></strong>: usado para representar um item que faz parte de uma lista.</p>
+        <p>Dentro de uma lista, você pode inserir outra lista.</p>
+        <p>POr meio do CSS é possível alterar os padrões das listas.</p>
+        <p>As listas são comumente utilizadas para fazer menu, mas para deixá-las horizontais é necessário o uso do CSS.</p>
+        <a title="Clique e volte ao início da página" href="#topo"><small>Voltar</small></a>
+
+    <h2 id="links">Links</h2>
+        <p>A tag <strong><i>"a"</i></strong> (anchor - âncora) define um hiperlink, que é usado para vincular de uma página a outra.</p>
+        <p>O atributo mais importante do "a" é o  <mark>href</mark>, que indica o destino do link.</p>
+        <p>Ex: <a href="http://dio.me">Dio.me</a>
+        <p>Por padrão, o link vem azul e sublinhado. Isso pode ser alterado por meio do CSS.</p>
+        <p>Por padrão o link abre na mesma aba <mark>("target=_self")</mark>, mas para mudar isso pode usar outro atributo, o <mark>"target=_blank"</mark>.</p>
+        <p>Ainda dentro do "a", podemos usar o atributo <mark>title</mark>="texto qualquer". Assim, quando passar o mouse em cima do link, aparecerá um balãozinho com o texto digitado.</p>
+        <p>O link serve não apenas para sites externos, também pode ser utilizado para alternar páginas dentro do mesmo site. Nesse caso, no href, deve ser inserido o nome do arquivo da página desejada.</p>
+        <p>Para fazer o caminho de volta, preciso inserir um link no arquivo da página atual com o nome do arquivo da página anterior.</p>
+        <p>A boa prática recomenda que se forem páginas do mesmo site o ideal é que sejam abertas na mesma aba, a fim de manter o usuário nela.</p>
+        <a title="Clique e volte ao início da página" href="#topo"><small>Voltar</small></a>
+
+    <h2 id="obs">Observações diversas</h2>
+        <p>A margem entre títulos, subtítulos e parágrafos vem predefinida pelo navegador, mas pode ser ajustada por meio de CSS. </p>
+        <p>Posso inserir outras tags dentro do texto, tipo strong, para negritar determinada palavra.</p>
+                <p>A tag <mark><del>"font"</del></mark> foi usada no HTML 4 para especificar o tipo da fonte, o tamanho da fonte e a cor do texto. Não é compatível com HTML5.Para definir essas caracteríticas no HTML5, devemos utilizar o CSS.</p>
+        <a title="Clique e volte ao início da página" href="#topo"><small>Voltar</small></a>
+
+    <h2 id="saibamais">Saiba mais</h2>
+    <p>No site <a title="Clique aqui" href="https://www.w3schools.com/html/">W3schools</a>  tem várias coisas legais, há, por exemplo, uma espécie de dicionário de tags.</p>
+    <a title="Clique e volte ao início da página" href="#topo"><small>Voltar</small></a>
+    <hr>
+
+    <h3 id="notas"><u>Notas</u></h3>
+    <ol>
+        <small><li>Disponível em: <a target="_blank" href="https://github.com/DBentoBatista">https://github.com/DBentoBatista</a></li>
+        <li>Disponível em: <a target="_blank" href="https://www.w3bai.com/pt/tags/tag_abbr.html#gsc.tab=0">https://www.w3bai.com/pt/tags/tag_abbr.html#gsc.tab=0</a></li></small>
+    </ol>
+
+    <a title="Clique e volte ao início da página" href="#topo"><small>Voltar</small></a>
+</html>
